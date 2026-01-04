@@ -42,16 +42,16 @@ class _MainPageState extends State<MainPage>
       opacity: _fadeTransition,
       child: SlideTransition(
         position: _slideAnimation,
-        child: Column(
+        child: const Column(
           mainAxisAlignment: .start,
           children: [
-            const Text('Hi, my name is Sergey'),
-            const Text('Developer, athlete and photographer'),
+            Text('Hi, my name is Sergey'),
+            Text('Developer, athlete and photographer'),
             Card(
-              margin: const EdgeInsets.all(22),
+              margin: EdgeInsets.all(22),
               elevation: 10,
               child: Padding(
-                padding: const EdgeInsetsGeometry.all(20),
+                padding: EdgeInsetsGeometry.all(20),
                 child: Column(
                   children: [
                     Text(

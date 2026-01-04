@@ -6,7 +6,7 @@ import 'package:shelf_router/shelf_router.dart';
 import 'routes/afisha.dart';
 import 'routes/pong.dart';
 import 'routes/old_webpage.dart';
-import 'routes/other.dart';
+import 'routes/new_website.dart';
 
 void main() async {
   final Router routes = Router()
