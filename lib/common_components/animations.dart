@@ -1,3 +1,0 @@
-class AppearPageAnimation {
-  const AppearPageAnimation();
-}

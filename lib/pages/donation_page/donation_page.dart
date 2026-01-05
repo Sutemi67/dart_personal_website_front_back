@@ -1,9 +1,10 @@
+import 'package:dart_personal_website_server/common_components/appear_page_animiation.dart';
 import 'package:flutter/material.dart';
 
 class DonationPage extends StatelessWidget {
   const DonationPage({super.key});
   @override
   Widget build(BuildContext context) {
-    return Center(child: const Text('Donation page'));
+    return AppearPageAnimation(child: Center(child: Text('Donation page')));
   }
 }
