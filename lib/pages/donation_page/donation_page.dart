@@ -5,6 +5,8 @@ class DonationPage extends StatelessWidget {
   const DonationPage({super.key});
   @override
   Widget build(BuildContext context) {
-    return AppearPageAnimation(child: Center(child: Text('Donation page')));
+    return AppearPageAnimation(
+      child: const Center(child: Text('Donation page')),
+    );
   }
 }

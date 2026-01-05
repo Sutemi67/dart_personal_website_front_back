@@ -6,22 +6,35 @@ class ButtonRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Column(
       children: [
-        Expanded(
-          child: ElevatedButton(onPressed: () => goToUrl, child: Text('Email')),
-        ),
-        Expanded(
-          child: ElevatedButton(onPressed: () {}, child: Text('LinkedIn')),
-        ),
-        Expanded(
+        Padding(
+          padding: const EdgeInsets.all(8.0),
           child: ElevatedButton(
-            onPressed: () {},
+            onPressed: () => goToUrl('@Sutemi67'),
+            child: const Text('Email'),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ElevatedButton(
+            onPressed: () => goToUrl('urlString'),
+            child: const Text('LinkedIn'),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ElevatedButton(
+            onPressed: () => goToUrl('https://t.me/Sutemi67'),
             child: const FittedBox(child: Text('Telegram')),
           ),
         ),
-        Expanded(
-          child: ElevatedButton(onPressed: () {}, child: Text('GitHub')),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ElevatedButton(
+            onPressed: () => goToUrl('https://github.com/Sutemi67'),
+            child: const Text('GitHub'),
+          ),
         ),
       ],
     );

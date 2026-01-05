@@ -11,7 +11,7 @@ class SiteApp extends StatefulWidget {
 class _SiteAppState extends State<SiteApp> {
   int _selectedIndex = 0;
   bool isWidescreen = false;
-
+  late final colors = Theme.of(context).colorScheme;
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
@@ -23,14 +23,20 @@ class _SiteAppState extends State<SiteApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Leading data'),
+        title: const Text('Leading title'),
+        backgroundColor: colors.primary,
+        foregroundColor: colors.onPrimary,
         actions: isWidescreen
             ? Destinations.list.map((el) {
                 return TextButton(
                   onPressed: () => setState(() {
                     _selectedIndex = el.pageIndex;
                   }),
-                  child: Text(el.label),
+
+                  child: Text(
+                    el.label,
+                    style: TextStyle(color: colors.onPrimary),
+                  ),
                 );
               }).toList()
             : null,
