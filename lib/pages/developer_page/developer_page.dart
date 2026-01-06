@@ -11,26 +11,25 @@ class DeveloperPage extends StatefulWidget {
 }
 
 class _DeveloperPageState extends State<DeveloperPage> {
-  final CarouselController controller = CarouselController(initialItem: 1);
-  @override
-  void dispose() {
-    controller.dispose();
-    super.dispose();
-  }
-
   @override
   Widget build(BuildContext context) {
     late final colorScheme = Theme.of(context).colorScheme;
-    // ignore: unused_local_variable
+    late final textScheme = Theme.of(context).textTheme;
     late final bgColor = Color.alphaBlend(
-      colorScheme.primary.withAlpha(56),
+      colorScheme.primary.withAlpha(200),
       colorScheme.surface,
     );
     return AppearPageAnimation(
       child: Column(
         children: [
-          Text('Developer page'),
-          Text('Description of developer page'),
+          Text(
+            'Developer page',
+            style: textScheme.headlineLarge!.copyWith(color: bgColor),
+          ),
+          Text(
+            'Description of developer page',
+            style: textScheme.headlineSmall,
+          ),
           KotlinCarouselWidget(),
           FlutterCarouselWidget(),
         ],

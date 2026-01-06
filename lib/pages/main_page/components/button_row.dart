@@ -36,6 +36,13 @@ class ButtonRow extends StatelessWidget {
             child: const Text('GitHub'),
           ),
         ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ElevatedButton(
+            onPressed: () {},
+            child: const Text('Download CV'),
+          ),
+        ),
       ],
     );
   }
