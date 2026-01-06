@@ -1,8 +1,10 @@
 import 'package:dart_personal_website_server/common_components/appear_page_animiation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widget_previews.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 class PhotoPage extends StatelessWidget {
+  @Preview(name: 'preview')
   const PhotoPage({super.key});
   static const List<String> listOfImages = [
     'assets/photo1.webp',
