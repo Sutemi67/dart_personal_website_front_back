@@ -9,6 +9,8 @@ environment:
 dependencies:
  flutter:
    sdk: flutter
+ flutter_staggered_grid_view: ^0.7.0
+ google_fonts: ^6.3.3
  shelf: ^1.4.2
  shelf_router: ^1.1.2
  shelf_static: ^1.1.3
@@ -22,3 +24,30 @@ dev_dependencies:
 
 flutter:
  uses-material-design: true
+ assets:
+  - assets/dco1.webp
+  - assets/dco2.webp
+  - assets/dco3.webp
+  - assets/dco4.webp
+  - assets/me.jpg
+  - assets/photo1.webp
+  - assets/photo2.webp
+  - assets/photo3.webp
+  - assets/photo4.webp
+  - assets/photo5.webp
+  - assets/photo6.webp
+  - assets/photo7.webp
+  - assets/photo8.webp
+  - assets/photo9.webp
+  - assets/photo10.webp
+  - assets/photo11.webp
+  - assets/photo12.webp
+  - assets/photo13.webp
+  - assets/photo14.webp
+  - assets/photo15.webp
+  - assets/photo16.webp
+  - assets/photo17.webp
+  - assets/photo18.webp
+  - assets/photo19.webp
+  - assets/photo20.webp
+  - assets/photo21.webp

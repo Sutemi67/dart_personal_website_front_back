@@ -40,7 +40,10 @@ class _AppearPageAnimationState extends State<AppearPageAnimation>
   Widget build(BuildContext context) {
     return FadeTransition(
       opacity: _fadeTransition,
-      child: SlideTransition(position: _slideAnimation, child: widget.child),
+      child: SlideTransition(
+        position: _slideAnimation,
+        child: SingleChildScrollView(child: widget.child),
+      ),
     );
   }
 }

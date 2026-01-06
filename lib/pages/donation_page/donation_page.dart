@@ -6,7 +6,23 @@ class DonationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppearPageAnimation(
-      child: const Center(child: Text('Donation page')),
+      child: SizedBox(
+        width: double.infinity,
+        child: Column(
+          children: [
+            Text('If you want to support me, please follow any link below:'),
+            Card(
+              margin: EdgeInsets.all(22),
+              child: Column(
+                children: [
+                  ElevatedButton(onPressed: () {}, child: Text('Umoney')),
+                  ElevatedButton(onPressed: () {}, child: Text('Cloud Tips')),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

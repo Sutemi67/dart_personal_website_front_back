@@ -12,6 +12,7 @@ class _SiteAppState extends State<SiteApp> {
   int _selectedIndex = 0;
   bool isWidescreen = false;
   late final colors = Theme.of(context).colorScheme;
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
@@ -21,21 +22,33 @@ class _SiteAppState extends State<SiteApp> {
 
   @override
   Widget build(BuildContext context) {
+    final pageName = Destinations.list[_selectedIndex].label;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Leading title'),
-        backgroundColor: colors.primary,
-        foregroundColor: colors.onPrimary,
+        title: Text('Leading title: $pageName'),
         actions: isWidescreen
             ? Destinations.list.map((el) {
-                return TextButton(
-                  onPressed: () => setState(() {
-                    _selectedIndex = el.pageIndex;
-                  }),
-
-                  child: Text(
-                    el.label,
-                    style: TextStyle(color: colors.onPrimary),
+                return Container(
+                  width: 100,
+                  height: double.infinity,
+                  decoration: BoxDecoration(
+                    gradient: _selectedIndex == el.pageIndex
+                        ? LinearGradient(
+                            colors: [
+                              Colors.transparent,
+                              Colors.purple.withAlpha(55),
+                            ],
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            stops: [0.5, 1.0],
+                          )
+                        : null,
+                  ),
+                  child: TextButton(
+                    onPressed: () => setState(() {
+                      _selectedIndex = el.pageIndex;
+                    }),
+                    child: Text(el.label),
                   ),
                 );
               }).toList()
