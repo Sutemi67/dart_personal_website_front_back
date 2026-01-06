@@ -9,6 +9,8 @@ class FlutterCarouselWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    late final height = MediaQuery.of(context).size.height / 3;
+
     return Card(
       child: ListView(
         shrinkWrap: true,
@@ -20,7 +22,7 @@ class FlutterCarouselWidget extends StatelessWidget {
             items: AppImages.flutterList
                 .map((el) => HeroLayoutWidget(imageUrl: el))
                 .toList(),
-            options: carouselsOptions,
+            options: carouselsOptions(height),
           ),
         ],
       ),

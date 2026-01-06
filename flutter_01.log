@@ -1,0 +1,149 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter debug_adapter
+
+## exception
+
+RPCError: readyToResume: (-32603) Unexpected DWDS error for resume: Unexpected error from chrome devtools:
+text: Uncaught (in promise) Error: Dart exception thrown from converted Future. Use the properties 'error' to fetch the boxed error and 'stack' to recover the stack trace.
+exception:
+  preview: null
+  description: Error: Dart exception thrown from converted Future. Use the properties 'error' to fetch the boxed error and 'stack' to recover the stack trace.
+    at load__package$58dart_personal_website_server__pages__developer_page__configs__carousels_options_dart (http://localhost:60389/packages/dart_personal_website_server/pages/developer_page/configs/carousels_options.dart.lib.js:37:38)
+    at LibraryManager.hotReloadEnd (http://localhost:60389/ddc_module_loader.js:1672:11)
+    at http://localhost:60389/ddc_module_loader.js:1635:18
+    at http://localhost:60389/dwds/src/injected/client.js:28666:57
+    at _wrapJsFunctionForAsync_closure.$protected (http://localhost:60389/dwds/src/injected/client.js:3895:15)
+    at _wrapJsFunctionForAsync_closure.call$2 (http://localhost:60389/dwds/src/injected/client.js:13684:12)
+    at Object._asyncStartSync (http://localhost:60389/dwds/src/injected/client.js:3859:20)
+    at DdcLibraryBundleRestarter.hotReloadEnd$0 (http://localhost:60389/dwds/src/injected/client.js:28673:16)
+    at http://localhost:60389/dwds/src/injected/client.js:28876:59
+    at _wrapJsFunctionForAsync_closure.$protected (http://localhost:60389/dwds/src/injected/client.js:3895:15)
+    at _wrapJsFunctionForAsync_closure.call$2 (http://localhost:60389/dwds/src/injected/client.js:13684:12)
+    at Object._asyncStartSync (http://localhost:60389/dwds/src/injected/client.js:3859:20)
+    at ReloadingManager.hotReloadEnd$0 (http://localhost:60389/dwds/src/injected/client.js:28883:16)
+    at main__closure0.call$0 (http://localhost:60389/dwds/src/injected/client.js:28126:62)
+    at _callDartFunctionFast0 (http://localhost:60389/dwds/src/injected/client.js:7827:43)
+    at http://localhost:60389/dwds/src/injected/client.js:7796:18
+    at <anonymous>:1:1
+  type: object
+  value: null
+attempted JS eval: `$dartHotReloadEndDwds();`
+stack trace:
+callConstructor()                                 http://localhost:60389/dwds/src/injected/client.js 7874:26
+JSFunctionUnsafeUtilExtension_callAsConstructor() http://localhost:60389/dwds/src/injected/client.js 10608:22
+call$2()                                          http://localhost:60389/dwds/src/injected/client.js 19441:18
+runBinary$3$3()                                   http://localhost:60389/dwds/src/injected/client.js 15573:17
+handleError$1()                                   http://localhost:60389/dwds/src/injected/client.js 13863:20
+call$0()                                          http://localhost:60389/dwds/src/injected/client.js 14210:48
+_Future__propagateToListeners()                   http://localhost:60389/dwds/src/injected/client.js 4155:76
+_completeErrorObject$1()                          http://localhost:60389/dwds/src/injected/client.js 14044:8
+completeError$2()                                 http://localhost:60389/dwds/src/injected/client.js 13663:11
+_asyncRethrow()                                   http://localhost:60389/dwds/src/injected/client.js 3869:16
+()                                                http://localhost:60389/dwds/src/injected/client.js 28869:19
+()                                                http://localhost:60389/dwds/src/injected/client.js 3894:14
+call$2()                                          http://localhost:60389/dwds/src/injected/client.js 13683:11
+call$2()                                          http://localhost:60389/dwds/src/injected/client.js 13677:24
+runBinary$3$3()                                   http://localhost:60389/dwds/src/injected/client.js 15573:17
+handleError$1()                                   http://localhost:60389/dwds/src/injected/client.js 13863:20
+call$0()                                          http://localhost:60389/dwds/src/injected/client.js 14210:48
+_Future__propagateToListeners()                   http://localhost:60389/dwds/src/injected/client.js 4155:76
+_completeErrorObject$1()                          http://localhost:60389/dwds/src/injected/client.js 14044:8
+call$0()                                          http://localhost:60389/dwds/src/injected/client.js 14118:17
+_microtaskLoop()                                  http://localhost:60389/dwds/src/injected/client.js 4213:23
+_startMicrotaskLoop()                             http://localhost:60389/dwds/src/injected/client.js 4219:10
+call$1()                                          http://localhost:60389/dwds/src/injected/client.js 13561:8
+call$1()                      http://localhost:60389/dwds/src/injected/client.js 13571:25
+_scheduleAsyncCallback()      http://localhost:60389/dwds/src/injected/client.js 4233:55
+_rootScheduleMicrotask()      http://localhost:60389/dwds/src/injected/client.js 4421:8
+scheduleMicrotask$1()         http://localhost:60389/dwds/src/injected/client.js 15589:8
+_asyncCompleteErrorObject$1() http://localhost:60389/dwds/src/injected/client.js 14072:17
+completeError$2()             http://localhost:60389/dwds/src/injected/client.js 13665:11
+_asyncRethrow()               http://localhost:60389/dwds/src/injected/client.js 3869:16
+()                            http://localhost:60389/dwds/src/injected/client.js 28660:19
+()                            http://localhost:60389/dwds/src/injected/client.js 3894:14
+call$2()                      http://localhost:60389/dwds/src/injected/client.js 13683:11
+_asyncStartSync()             http://localhost:60389/dwds/src/injected/client.js 3858:19
+hotReloadEnd$0()              http://localhost:60389/dwds/src/injected/client.js 28672:15
+()                            http://localhost:60389/dwds/src/injected/client.js 28875:58
+()                            http://localhost:60389/dwds/src/injected/client.js 3894:14
+call$2()                      http://localhost:60389/dwds/src/injected/client.js 13683:11
+_asyncStartSync()             http://localhost:60389/dwds/src/injected/client.js 3858:19
+hotReloadEnd$0()              http://localhost:60389/dwds/src/injected/client.js 28882:15
+call$0()                      http://localhost:60389/dwds/src/injected/client.js 28125:61
+_callDartFunctionFast0()      http://localhost:60389/dwds/src/injected/client.js 7826:42
+()                            http://localhost:60389/dwds/src/injected/client.js 7795:17
+()                             0:0
+
+
+```
+#0      new _OutstandingRequest (package:vm_service/src/vm_service.dart:268:34)
+#1      VmService._call.<anonymous closure> (package:vm_service/src/vm_service.dart:1950:25)
+#2      VmService._call (package:vm_service/src/vm_service.dart:1962:8)
+#3      VmService.callServiceExtension (package:vm_service/src/vm_service.dart:1901:14)
+#4      VmService.callMethod (package:vm_service/src/vm_service.dart:1884:12)
+#5      DdsExtension._callHelper (package:dds_service_extensions/dds_service_extensions.dart:369:12)
+#6      DdsExtension.readyToResume (package:dds_service_extensions/dds_service_extensions.dart:327:12)
+<asynchronous suspension>
+#7      IsolateManager._readyToResume (package:dds/src/dap/isolate_manager.dart:425:7)
+<asynchronous suspension>
+#8      IsolateManager.readyToResumeThread (package:dds/src/dap/isolate_manager.dart:306:5)
+<asynchronous suspension>
+#9      IsolateManager._handlePause (package:dds/src/dap/isolate_manager.dart:695:7)
+<asynchronous suspension>
+#10     IsolateManager.handleEvent (package:dds/src/dap/isolate_manager.dart:207:7)
+<asynchronous suspension>
+#11     DartDebugAdapter.handleDebugEvent (package:dds/src/dap/adapters/dart.dart:2470:5)
+<asynchronous suspension>
+#12     DartDebugAdapter._withErrorHandling (package:dds/src/dap/adapters/dart.dart:2832:14)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 3.38.5, on macOS 15.6.1 24G90 darwin-arm64, locale ru-TR) [476ms]
+    • Flutter version 3.38.5 on channel stable at /Users/sergeyboykov/Library/flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision f6ff1529fd (4 weeks ago), 2025-12-11 11:50:07 -0500
+    • Engine revision 1527ae0ec5
+    • Dart version 3.10.4
+    • DevTools version 2.51.1
+    • Feature flags: enable-web, enable-linux-desktop, enable-macos-desktop, enable-windows-desktop, enable-android, enable-ios, cli-animations, enable-native-assets, omit-legacy-version-file, enable-lldb-debugging
+
+[!] Android toolchain - develop for Android devices (Android SDK version 35.0.0) [1 828ms]
+    • Android SDK at /Users/sergeyboykov/Library/Android/sdk
+    • Emulator version 36.2.12.0 (build_id 14214601) (CL:N/A)
+    • Platform android-36, build-tools 35.0.0
+    • Java binary at: /Applications/Android Studio.app/Contents/jbr/Contents/Home/bin/java
+      This is the JDK bundled with the latest Android Studio installation on this machine.
+      To manually set the JDK path, use: `flutter config --jdk-dir="path/to/jdk"`.
+    • Java version OpenJDK Runtime Environment (build 21.0.8+-14196175-b1038.72)
+    ! Some Android licenses not accepted. To resolve this, run: flutter doctor --android-licenses
+
+[!] Xcode - develop for iOS and macOS (Xcode 26.2) [1 127ms]
+    • Xcode at /Applications/Xcode.app/Contents/Developer
+    • Build 17C52
+    ! iOS 26.2 Simulator not installed; this may be necessary for iOS and macOS development.
+      To download and install the platform, open Xcode, select Xcode > Settings > Components,
+      and click the GET button for the required platform.
+
+      For more information, please visit:
+        https://developer.apple.com/documentation/xcode/installing-additional-simulator-runtimes
+    • CocoaPods version 1.16.2
+
+[✓] Chrome - develop for the web [4ms]
+    • Chrome at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+[✓] Connected device (2 available) [6,4s]
+    • macOS (desktop) • macos  • darwin-arm64   • macOS 15.6.1 24G90 darwin-arm64
+    • Chrome (web)    • chrome • web-javascript • Google Chrome 143.0.7499.170
+
+[✓] Network resources [853ms]
+    • All expected network resources are available.
+
+! Doctor found issues in 2 categories.
+```

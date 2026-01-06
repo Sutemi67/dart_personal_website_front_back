@@ -9,6 +9,7 @@ class KotlinCarouselWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    late final height = MediaQuery.of(context).size.height / 3;
     return Card(
       child: ListView(
         shrinkWrap: true,
@@ -20,7 +21,7 @@ class KotlinCarouselWidget extends StatelessWidget {
             items: AppImages.kotlinList
                 .map((el) => HeroLayoutWidget(imageUrl: el))
                 .toList(),
-            options: carouselsOptions,
+            options: carouselsOptions(height),
           ),
         ],
       ),
