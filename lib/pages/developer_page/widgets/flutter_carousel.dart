@@ -63,6 +63,7 @@ class _FlutterCarouselWidgetState extends State<FlutterCarouselWidget> {
                             imageUrl: el.imageUrl,
                             title: el.title,
                             description: el.description,
+                            urlToOpen: el.urlToOpen,
                           ),
                         )
                         .toList(),

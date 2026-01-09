@@ -68,6 +68,7 @@ class _KotlinCarouselWidgetState extends State<KotlinCarouselWidget> {
                             imageUrl: el.imageUrl,
                             title: el.title,
                             description: el.description,
+                            urlToOpen: el.urlToOpen,
                           ),
                         )
                         .toList(),

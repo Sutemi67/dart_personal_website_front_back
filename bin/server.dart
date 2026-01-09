@@ -3,17 +3,18 @@ import 'dart:io';
 import 'package:shelf/shelf.dart';
 import 'package:shelf/shelf_io.dart';
 import 'package:shelf_router/shelf_router.dart';
+
 import 'routes/afisha.dart';
-import 'routes/pong.dart';
-import 'routes/old_webpage.dart';
 import 'routes/new_website.dart';
+import 'routes/old_webpage.dart';
+import 'routes/pong.dart';
 
 void main() async {
   final Router routes = Router()
-    ..mount('/pong', pongHandler)
-    ..mount('/afisha', afishaHandler)
-    ..mount('/new', newWebsiteHandler)
-    ..mount('/', oldWebpageHandler);
+    ..mount(pongEndpoint, pongHandler)
+    ..mount(afishaEndpoint, afishaHandler)
+    ..mount(oldWebsiteEndpoint, oldWebpageHandler)
+    ..mount('/', newWebsiteHandler);
 
   final handler = const Pipeline()
       .addMiddleware(logRequests())
