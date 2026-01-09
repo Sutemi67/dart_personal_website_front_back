@@ -23,13 +23,10 @@ class _SiteAppState extends State<SiteApp> {
 
   @override
   Widget build(BuildContext context) {
-    final pageName = Destinations.list[_selectedIndex].label;
-    final colors = Theme.of(context).colorScheme;
     return Scaffold(
       backgroundColor: colors.surfaceContainer,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
-        title: Text('Leading title: $pageName'),
         actions: isWidescreen
             ? Destinations.list.map((el) {
                 return AppActionButton(

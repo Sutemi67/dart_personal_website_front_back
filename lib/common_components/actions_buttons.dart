@@ -25,7 +25,7 @@ class AppActionButton extends StatelessWidget {
                 colors: [colors.secondaryContainer, colors.tertiaryContainer],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                stops: [0.5, 1],
+                stops: [0, 1],
               )
             : null,
       ),

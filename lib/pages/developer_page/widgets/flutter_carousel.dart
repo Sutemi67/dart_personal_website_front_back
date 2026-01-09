@@ -1,12 +1,13 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dart_personal_website_server/pages/developer_page/configs/apps_lists.dart';
 import 'package:dart_personal_website_server/pages/developer_page/configs/carousels_options.dart';
+import 'package:dart_personal_website_server/pages/developer_page/configs/dev_constants.dart';
 import 'package:dart_personal_website_server/pages/developer_page/widgets/hero_stack_layout.dart';
 import 'package:flutter/material.dart';
 
 class FlutterCarouselWidget extends StatefulWidget {
   const FlutterCarouselWidget({super.key});
-  static const paddings = EdgeInsets.all(10.0);
+
   @override
   State<FlutterCarouselWidget> createState() => _FlutterCarouselWidgetState();
 }
@@ -14,106 +15,90 @@ class FlutterCarouselWidget extends StatefulWidget {
 class _FlutterCarouselWidgetState extends State<FlutterCarouselWidget> {
   final CarouselSliderController _controller = CarouselSliderController();
   int _currentIndex = 0;
+  late final _height = MediaQuery.of(context).size.height / 3;
+  late final _colorScheme = Theme.of(context).colorScheme;
+  late final _textScheme = Theme.of(context).textTheme;
+  late final stackTitleStyle = _textScheme.headlineSmall!.copyWith(
+    color: Color.alphaBlend(_colorScheme.primary, _colorScheme.surface),
+  );
+  late final stackDescriptionStyle = _textScheme.titleMedium!.copyWith(
+    color: _colorScheme.onSurface,
+  );
 
   @override
   Widget build(BuildContext context) {
-    late final height = MediaQuery.of(context).size.height / 3;
-    late final colorScheme = Theme.of(context).colorScheme;
-    late final textScheme = Theme.of(context).textTheme;
-    late final stackTitleSize = textScheme.headlineSmall;
-    late final stackDescriptionSize = textScheme.titleMedium;
-    return Card(
-      elevation: 5,
-      child: ListView(
-        shrinkWrap: true,
-        physics: const NeverScrollableScrollPhysics(),
-        children: [
-          Padding(
-            padding: FlutterCarouselWidget.paddings,
-            child: Text(
-              'FLUTTER',
-              style: stackTitleSize!.copyWith(
-                color: Color.alphaBlend(
-                  colorScheme.primary,
-                  colorScheme.surface,
-                ),
+    return Padding(
+      padding: DevelopersPageConstants.paddings,
+      child: Card(
+        color: _colorScheme.surfaceContainerHigh,
+        elevation: 5,
+        child: ListView(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          children: [
+            Padding(
+              padding: DevelopersPageConstants.textPaddings,
+              child: Text('FLUTTER', style: stackTitleStyle),
+            ),
+            Padding(
+              padding: DevelopersPageConstants.textPaddings,
+              child: Text('Flutter stack:', style: stackDescriptionStyle),
+            ),
+            Padding(
+              padding: DevelopersPageConstants.textPaddings,
+              child: Text(
+                'Apps, already in production:',
+                style: stackDescriptionStyle,
               ),
             ),
-          ),
-          Padding(
-            padding: FlutterCarouselWidget.paddings,
-            child: Text('Flutter stack:', style: stackDescriptionSize),
-          ),
-          Padding(
-            padding: FlutterCarouselWidget.paddings,
-            child: Text(
-              'Apps, already in production:',
-              style: stackDescriptionSize,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 15),
-            child: Stack(
-              children: [
-                CarouselSlider(
-                  carouselController: _controller,
-                  items: AppsLists.flutterList
-                      .map(
-                        (el) => HeroLayoutWidget(
-                          imageUrl: el.imageUrl,
-                          title: el.title,
-                          description: el.description,
-                        ),
-                      )
-                      .toList(),
-                  options: carouselsOptions(height, (index, reason) {
-                    setState(() {
-                      _currentIndex = index;
-                    });
-                  }),
-                ),
-                Positioned(
-                  left: 0,
-                  top: 0,
-                  bottom: 0,
-                  child: IconButton(
-                    icon: Icon(Icons.arrow_back_ios, color: Colors.white),
-                    onPressed: () => _controller.nextPage(),
+            Padding(
+              padding: DevelopersPageConstants.carouselPaddings,
+              child: Stack(
+                children: [
+                  CarouselSlider(
+                    carouselController: _controller,
+                    items: AppsLists.flutterList
+                        .map(
+                          (el) => HeroLayoutWidget(
+                            imageUrl: el.imageUrl,
+                            title: el.title,
+                            description: el.description,
+                          ),
+                        )
+                        .toList(),
+                    options: carouselsOptions(_height, (index, reason) {
+                      setState(() {
+                        _currentIndex = index;
+                      });
+                    }),
                   ),
-                ),
-                Positioned(
-                  right: 0,
-                  top: 0,
-                  bottom: 0,
-                  child: IconButton(
-                    icon: Icon(Icons.arrow_forward_ios, color: Colors.white),
-                    onPressed: () => _controller.previousPage(),
-                  ),
-                ),
-              ],
+                  DevelopersPageConstants.nextButton(_colorScheme, _controller),
+                  DevelopersPageConstants.backButton(_colorScheme, _controller),
+                ],
+              ),
             ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: AppsLists.flutterList.map((entry) {
-              int index = AppsLists.flutterList.indexOf(entry);
-              return Container(
-                width: 8.0,
-                height: 8.0,
-                margin: const EdgeInsets.symmetric(
-                  vertical: 10.0,
-                  horizontal: 2.0,
-                ),
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: _currentIndex == index
-                      ? const Color.fromARGB(78, 200, 61, 219)
-                      : const Color.fromRGBO(0, 0, 0, 0.4),
-                ),
-              );
-            }).toList(),
-          ),
-        ],
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: AppsLists.flutterList.map((entry) {
+                int index = AppsLists.flutterList.indexOf(entry);
+                return Container(
+                  width: 8.0,
+                  height: 8.0,
+                  margin: const EdgeInsets.symmetric(
+                    vertical: 10.0,
+                    horizontal: 2.0,
+                  ),
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: _currentIndex == index
+                        ? const Color.fromARGB(78, 200, 61, 219)
+                        : const Color.fromRGBO(0, 0, 0, 0.4),
+                  ),
+                );
+              }).toList(),
+            ),
+          ],
+        ),
       ),
     );
   }

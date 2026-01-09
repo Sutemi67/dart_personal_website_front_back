@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         textTheme: textTheme,
-        brightness: Brightness.light,
+        brightness: Brightness.dark,
         colorSchemeSeed: Colors.deepPurple,
       ),
       home: SiteApp(),
