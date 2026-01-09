@@ -4,28 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e318f3a-c8cd-4b70-99cd-fadd698ec09b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/payments/qrCode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/common_components/actions_buttons.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/common_components/app_button.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/common_components/functions.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0e318f3a-c8cd-4b70-99cd-fadd698ec09b" name="Changes" comment="ui patch, buttons">
       <change beforePath="$PROJECT_DIR$/build/35ce3c89fb5b70272d687dfba97aa1f8.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/35ce3c89fb5b70272d687dfba97aa1f8.cache.dill.track.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/6ab642d2d29d49c7c5f5a6d85fcef46b.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/6ab642d2d29d49c7c5f5a6d85fcef46b.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dart_personal_website_server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dart_personal_website_server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/common_components/appear_page_animiation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common_components/appear_page_animation.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/destinations.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/destinations.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/developer_page/developer_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/developer_page/developer_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/developer_page/widgets/hero_stack_layout.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/developer_page/widgets/hero_stack_layout.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/donation_page/donation_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/donation_page/donation_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/main_page/components/button_row.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/main_page/components/button_row.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/main_page/components/buttor_row_functions.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/main_page/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/main_page/main_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/photo_page/photo_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/photo_page/photo_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/train_page/train_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/train_page/train_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/site_app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/site_app.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +106,15 @@
       <option name="presentableId" value="Default" />
       <updated>1767466972683</updated>
     </task>
+    <task id="LOCAL-00001" summary="ui patch, buttons">
+      <option name="closed" value="true" />
+      <created>1767955456112</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1767955456112</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -134,6 +124,9 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="ui patch" />
+    <MESSAGE value="ui patch, buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="ui patch, buttons" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
