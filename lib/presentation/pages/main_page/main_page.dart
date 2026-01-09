@@ -1,5 +1,5 @@
-import 'package:dart_personal_website_server/common_components/appear_page_animation.dart';
-import 'package:dart_personal_website_server/pages/main_page/components/button_row.dart';
+import 'package:dart_personal_website_server/presentation/common_components/appear_page_animation.dart';
+import 'package:dart_personal_website_server/presentation/pages/main_page/components/button_row.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {

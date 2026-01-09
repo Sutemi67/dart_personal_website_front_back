@@ -1,4 +1,4 @@
-import 'package:dart_personal_website_server/common_components/appear_page_animation.dart';
+import 'package:dart_personal_website_server/presentation/common_components/appear_page_animation.dart';
 import 'package:flutter/material.dart';
 
 class TrainPage extends StatelessWidget {

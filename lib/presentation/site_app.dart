@@ -1,6 +1,7 @@
-import 'package:dart_personal_website_server/common_components/actions_buttons.dart';
-import 'package:dart_personal_website_server/pages/destinations.dart';
+import 'package:dart_personal_website_server/presentation/common_components/actions_buttons.dart';
 import 'package:flutter/material.dart';
+
+import 'destinations.dart';
 
 class SiteApp extends StatefulWidget {
   const SiteApp({super.key});

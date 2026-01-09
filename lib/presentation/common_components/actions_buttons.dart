@@ -1,5 +1,6 @@
-import 'package:dart_personal_website_server/pages/destinations.dart';
 import 'package:flutter/material.dart';
+
+import '../destinations.dart';
 
 class AppActionButton extends StatelessWidget {
   const AppActionButton({

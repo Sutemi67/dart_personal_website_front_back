@@ -1,4 +1,4 @@
-import 'package:dart_personal_website_server/pages/donation_page/components/donate_constants.dart';
+import 'package:dart_personal_website_server/presentation/pages/donation_page/components/donate_constants.dart';
 import 'package:flutter/material.dart';
 
 import '../../../common_components/app_button.dart';

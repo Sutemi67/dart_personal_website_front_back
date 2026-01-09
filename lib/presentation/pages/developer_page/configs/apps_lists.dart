@@ -1,4 +1,4 @@
-import 'package:dart_personal_website_server/pages/developer_page/configs/app_info.dart';
+import 'app_info.dart';
 
 class AppsLists {
   static const List<AppInfo> kotlinList = [

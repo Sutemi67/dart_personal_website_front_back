@@ -1,4 +1,4 @@
-import 'package:dart_personal_website_server/common_components/functions.dart';
+import 'package:dart_personal_website_server/presentation/common_components/functions.dart';
 import 'package:flutter/material.dart';
 
 class HeroLayoutWidget extends StatelessWidget {

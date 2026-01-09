@@ -1,8 +1,8 @@
-import 'package:dart_personal_website_server/pages/developer_page/developer_page.dart';
-import 'package:dart_personal_website_server/pages/donation_page/donation_page.dart';
-import 'package:dart_personal_website_server/pages/main_page/main_page.dart';
-import 'package:dart_personal_website_server/pages/photo_page/photo_page.dart';
-import 'package:dart_personal_website_server/pages/train_page/train_page.dart';
+import 'package:dart_personal_website_server/presentation/pages/developer_page/developer_page.dart';
+import 'package:dart_personal_website_server/presentation/pages/donation_page/donation_page.dart';
+import 'package:dart_personal_website_server/presentation/pages/main_page/main_page.dart';
+import 'package:dart_personal_website_server/presentation/pages/photo_page/photo_page.dart';
+import 'package:dart_personal_website_server/presentation/pages/train_page/train_page.dart';
 import 'package:flutter/material.dart';
 
 class Destination {
