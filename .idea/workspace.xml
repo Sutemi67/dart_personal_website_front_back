@@ -5,11 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e318f3a-c8cd-4b70-99cd-fadd698ec09b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/payments/qrCode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/common_components/actions_buttons.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/common_components/app_button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/common_components/functions.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ca33f282d90356a564f3e3da52c97351.cache.dill.track.dill" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/35ce3c89fb5b70272d687dfba97aa1f8.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/35ce3c89fb5b70272d687dfba97aa1f8.cache.dill.track.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/6ab642d2d29d49c7c5f5a6d85fcef46b.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/6ab642d2d29d49c7c5f5a6d85fcef46b.cache.dill.track.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dart_personal_website_server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dart_personal_website_server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/common_components/appear_page_animiation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common_components/appear_page_animation.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/destinations.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/destinations.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/developer_page/developer_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/developer_page/developer_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/developer_page/widgets/hero_stack_layout.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/developer_page/widgets/hero_stack_layout.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/donation_page/donation_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/donation_page/donation_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/main_page/components/button_row.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/main_page/components/button_row.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/main_page/components/buttor_row_functions.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/main_page/main_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/main_page/main_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/photo_page/photo_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/photo_page/photo_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/train_page/train_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/train_page/train_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/site_app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/site_app.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,28 +45,44 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Sutemi67"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Sutemi67&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Sutemi67/dart_personal_website_front_back.git",
-    "accountId": "c854916e-ea81-424e-906b-436e95057d9f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Sutemi67/dart_personal_website_front_back.git&quot;,
+    &quot;accountId&quot;: &quot;c854916e-ea81-424e-906b-436e95057d9f&quot;
   }
-}]]></component>
+}</component>
   <component name="OpenIdeProjectLocalState">
     <option name="firstOpen" value="false" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="37l9pSiRdPifVRFlKUqS9AvvA6p" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
@@ -80,6 +112,11 @@
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/payments" />
+    </key>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0e318f3a-c8cd-4b70-99cd-fadd698ec09b" name="Changes" comment="" />
@@ -95,5 +132,9 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

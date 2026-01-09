@@ -1,47 +1,53 @@
-import 'package:dart_personal_website_server/pages/main_page/components/buttor_row_functions.dart';
+import 'package:dart_personal_website_server/common_components/app_button.dart';
 import 'package:flutter/material.dart';
+
+import '../../../common_components/functions.dart';
 
 class ButtonRow extends StatelessWidget {
   const ButtonRow({super.key});
+
+  static const padding = EdgeInsets.all(8.0);
+  static const double buttonWidth = 150.0;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ElevatedButton(
-            onPressed: () => goToUrl('@Sutemi67'),
-            child: const Text('Email'),
+          padding: padding,
+          child: AppButton(
+            onClick: () => goToUrl('@Sutemi67'),
+            text: 'Email',
+            width: buttonWidth,
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ElevatedButton(
-            onPressed: () => goToUrl('urlString'),
-            child: const Text('LinkedIn'),
+          padding: padding,
+          child: AppButton(
+            onClick: () => goToUrl('urlString'),
+            text: 'LinkedIn',
+            width: buttonWidth,
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ElevatedButton(
-            onPressed: () => goToUrl('https://t.me/Sutemi67'),
-            child: const FittedBox(child: Text('Telegram')),
+          padding: padding,
+          child: AppButton(
+            onClick: () => goToUrl('https://t.me/Sutemi67'),
+            text: 'Telegram',
+            width: buttonWidth,
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ElevatedButton(
-            onPressed: () => goToUrl('https://github.com/Sutemi67'),
-            child: const Text('GitHub'),
+          padding: padding,
+          child: AppButton(
+            onClick: () => goToUrl('https://github.com/Sutemi67'),
+            text: 'GitHub',
+            width: buttonWidth,
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ElevatedButton(
-            onPressed: () {},
-            child: const Text('Download CV'),
-          ),
+          padding: padding,
+          child: AppButton(onClick: () {}, text: 'Download CV'),
         ),
       ],
     );

@@ -7,6 +7,7 @@ class HeroLayoutWidget extends StatelessWidget {
     required this.title,
     required this.description,
   });
+
   final String imageUrl;
   final String title;
   final String description;
@@ -32,10 +33,6 @@ class HeroLayoutWidget extends StatelessWidget {
               image: DecorationImage(
                 image: AssetImage(imageUrl),
                 fit: BoxFit.cover,
-                colorFilter: ColorFilter.mode(
-                  Theme.of(context).colorScheme.primary.withAlpha(111),
-                  BlendMode.softLight,
-                ),
               ),
             ),
           ),

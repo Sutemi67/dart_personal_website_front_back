@@ -1,4 +1,4 @@
-import 'package:dart_personal_website_server/common_components/appear_page_animiation.dart';
+import 'package:dart_personal_website_server/common_components/appear_page_animation.dart';
 import 'package:dart_personal_website_server/pages/developer_page/widgets/flutter_carousel.dart';
 import 'package:dart_personal_website_server/pages/developer_page/widgets/kotlin_carousel.dart';
 import 'package:flutter/material.dart';

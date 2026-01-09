@@ -16,10 +16,10 @@ class Destination {
 
 class Destinations {
   static const List<Destination> list = <Destination>[
-    Destination(Icons.home, 'Main', MainPage(), 0),
-    Destination(Icons.devices_sharp, 'Develop', DeveloperPage(), 1),
-    Destination(Icons.camera, 'Photo', PhotoPage(), 2),
-    Destination(Icons.sports_gymnastics, 'Sport', TrainPage(), 3),
-    Destination(Icons.money, 'Donate', DonationPage(), 4),
+    Destination(Icons.home_outlined, 'Main', MainPage(), 0),
+    Destination(Icons.devices_outlined, 'Develop', DeveloperPage(), 1),
+    Destination(Icons.camera_outlined, 'Photo', PhotoPage(), 2),
+    Destination(Icons.sports_gymnastics_outlined, 'Sport', TrainPage(), 3),
+    Destination(Icons.monetization_on_outlined, 'Donate', DonationPage(), 4),
   ];
 }
