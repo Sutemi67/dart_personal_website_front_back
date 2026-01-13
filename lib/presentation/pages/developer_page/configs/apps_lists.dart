@@ -4,21 +4,44 @@ class AppsLists {
   static const List<AppInfo> kotlinList = [
     AppInfo(
       title: 'Friends Activity',
-      description: 'description',
-      imageUrl: 'assets/photo10.webp',
-      urlToOpen: '',
+      description: 'step counter with ratings',
+      imageUrl: 'assets/activity.webp',
+      urlToOpen:
+          'https://www.rustore.ru/catalog/app/apc.appcradle.kotlinjc_friendsactivity_app',
     ),
     AppInfo(
       title: 'WOT Calc',
       description: 'description',
-      imageUrl: 'assets/photo11.webp',
-      urlToOpen: '',
+      imageUrl: 'assets/flutter.png',
+      urlToOpen: 'https://www.rustore.ru/catalog/app/acr.appcradle.wotcalc',
     ),
     AppInfo(
       title: 'Feelings Diary',
-      description: 'description',
-      imageUrl: 'assets/photo14.webp',
-      urlToOpen: '',
+      description: 'diary of emotions',
+      imageUrl: 'assets/activity.webp',
+      urlToOpen:
+          'https://www.rustore.ru/catalog/app/apc.appcradle.kotlinjc_feelingdiary_app',
+    ),
+    AppInfo(
+      title: 'AppCradle player',
+      description: 'Simple audio player',
+      imageUrl: 'assets/appcradleplayer.png',
+      urlToOpen:
+          'https://www.rustore.ru/catalog/app/apc.appcradle.radioappcradle',
+    ),
+    AppInfo(
+      title: 'Task Time',
+      description: 'Pomodorro timer',
+      imageUrl: 'assets/flutter.png',
+      urlToOpen:
+          'https://www.rustore.ru/catalog/app/apc.appcradle.kotlinjc_pomodorrotimer_app',
+    ),
+    AppInfo(
+      title: 'Working Hours',
+      description: 'calendar',
+      imageUrl: 'assets/flutter.png',
+      urlToOpen:
+          'https://www.rustore.ru/catalog/app/apc.appcradle.workinghours',
     ),
   ];
   static const List<AppInfo> flutterList = [
@@ -31,7 +54,7 @@ class AppsLists {
     AppInfo(
       title: 'Pong game',
       description: 'description',
-      imageUrl: 'assets/photo15.webp',
+      imageUrl: 'assets/flutter.png',
       urlToOpen: 'http://localhost:7575/pong',
     ),
     AppInfo(

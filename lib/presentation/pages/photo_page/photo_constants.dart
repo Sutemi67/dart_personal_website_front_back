@@ -1,0 +1,25 @@
+class PhotoConstants {
+  static const List<String> listOfImages = [
+    'assets/photo1.webp',
+    'assets/photo2.webp',
+    'assets/photo3.webp',
+    'assets/photo4.webp',
+    'assets/photo5.webp',
+    'assets/photo6.webp',
+    'assets/photo7.webp',
+    'assets/photo8.webp',
+    'assets/photo9.webp',
+    'assets/photo10.webp',
+    'assets/photo11.webp',
+    'assets/photo12.webp',
+    'assets/photo13.webp',
+    'assets/photo14.webp',
+    'assets/photo15.webp',
+    'assets/photo16.webp',
+    'assets/photo17.webp',
+    'assets/photo18.webp',
+    'assets/photo19.webp',
+    'assets/photo20.webp',
+    'assets/photo21.webp',
+  ];
+}

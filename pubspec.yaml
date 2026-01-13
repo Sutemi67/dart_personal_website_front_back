@@ -26,12 +26,14 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    # other pics
+    - assets/qrCode.png
+    - assets/me.jpg
+    # docs
     - assets/dco1.webp
-    - assets/payments/qrCode.png
     - assets/dco2.webp
     - assets/dco3.webp
     - assets/dco4.webp
-    - assets/me.jpg
     - assets/photo1.webp
     - assets/photo2.webp
     - assets/photo3.webp
@@ -53,3 +55,7 @@ flutter:
     - assets/photo19.webp
     - assets/photo20.webp
     - assets/photo21.webp
+    # apps icons
+    - assets/appcradleplayer.png
+    - assets/activity.webp
+    - assets/flutter.png

@@ -1,4 +1,5 @@
 import 'package:dart_personal_website_server/presentation/common_components/actions_buttons.dart';
+import 'package:dart_personal_website_server/presentation/common_components/app_styles.dart';
 import 'package:flutter/material.dart';
 
 import 'destinations.dart';
@@ -13,7 +14,7 @@ class SiteApp extends StatefulWidget {
 class _SiteAppState extends State<SiteApp> {
   int _selectedIndex = 0;
   bool isWidescreen = false;
-  late final colors = Theme.of(context).colorScheme;
+  late final colors = context.themeColors;
 
   @override
   void didChangeDependencies() {
@@ -25,7 +26,7 @@ class _SiteAppState extends State<SiteApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: colors.surfaceContainer,
+      // backgroundColor: colors.surfaceContainerLowest,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         actions: isWidescreen

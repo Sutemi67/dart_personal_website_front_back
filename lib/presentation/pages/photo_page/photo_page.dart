@@ -1,4 +1,6 @@
+import 'package:dart_personal_website_server/presentation/common_components/app_styles.dart';
 import 'package:dart_personal_website_server/presentation/common_components/appear_page_animation.dart';
+import 'package:dart_personal_website_server/presentation/pages/photo_page/photo_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widget_previews.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
@@ -7,40 +9,39 @@ class PhotoPage extends StatelessWidget {
   @Preview(name: 'preview')
   const PhotoPage({super.key});
 
-  static const List<String> listOfImages = [
-    'assets/photo1.webp',
-    'assets/photo2.webp',
-    'assets/photo3.webp',
-    'assets/photo4.webp',
-    'assets/photo5.webp',
-    'assets/photo6.webp',
-    'assets/photo7.webp',
-    'assets/photo8.webp',
-    'assets/photo9.webp',
-    'assets/photo10.webp',
-    'assets/photo11.webp',
-    'assets/photo12.webp',
-    'assets/photo13.webp',
-    'assets/photo14.webp',
-    'assets/photo15.webp',
-    'assets/photo16.webp',
-    'assets/photo17.webp',
-    'assets/photo18.webp',
-    'assets/photo19.webp',
-    'assets/photo20.webp',
-    'assets/photo21.webp',
-  ];
-
   @override
   Widget build(BuildContext context) {
     return AppearPageAnimation(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const Text('Photography'),
-          const Text('My view of the world through the lens.'),
+          Text('Photography', style: context.titleStyle),
+          Text(
+            'My view of the world through the lens.',
+            style: context.bodyStyle,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 10.0),
+            child: Card(
+              color: context.cardColor,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 15,
+                  horizontal: 25,
+                ),
+                child: Container(
+                  width: double.infinity,
+                  child: Text(
+                    'Now I live in Smolensk. If you want to get a session, please contact me and we find a better time for you. Here are some examples of my works.',
+                    style: context.descriptionStyle,
+                    textAlign: .center,
+                  ),
+                ),
+              ),
+            ),
+          ),
           MasonryGridView.builder(
-            itemCount: listOfImages.length,
+            itemCount: PhotoConstants.listOfImages.length,
             physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             primary: false,
@@ -51,9 +52,11 @@ class PhotoPage extends StatelessWidget {
             crossAxisSpacing: 6,
             itemBuilder: (context, index) {
               return Card(
+                shadowColor: Colors.black,
+                elevation: 3,
                 clipBehavior: Clip.antiAlias,
                 child: Image.asset(
-                  listOfImages[index],
+                  PhotoConstants.listOfImages[index],
                   fit: BoxFit.cover,
                   width: double.infinity,
                 ),

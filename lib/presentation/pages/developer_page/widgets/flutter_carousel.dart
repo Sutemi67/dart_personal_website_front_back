@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:dart_personal_website_server/presentation/common_components/app_styles.dart';
 import 'package:flutter/material.dart';
 
 import '../configs/apps_lists.dart';
@@ -17,21 +18,12 @@ class _FlutterCarouselWidgetState extends State<FlutterCarouselWidget> {
   final CarouselSliderController _controller = CarouselSliderController();
   int _currentIndex = 0;
   late final _height = MediaQuery.of(context).size.height / 3;
-  late final _colorScheme = Theme.of(context).colorScheme;
-  late final _textScheme = Theme.of(context).textTheme;
-  late final stackTitleStyle = _textScheme.headlineSmall!.copyWith(
-    color: Color.alphaBlend(_colorScheme.primary, _colorScheme.surface),
-  );
-  late final stackDescriptionStyle = _textScheme.titleMedium!.copyWith(
-    color: _colorScheme.onSurface,
-  );
-
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: DevelopersPageConstants.paddings,
       child: Card(
-        color: _colorScheme.surfaceContainerHigh,
+        color: context.cardColor,
         elevation: 5,
         child: ListView(
           shrinkWrap: true,
@@ -39,17 +31,17 @@ class _FlutterCarouselWidgetState extends State<FlutterCarouselWidget> {
           children: [
             Padding(
               padding: DevelopersPageConstants.textPaddings,
-              child: Text('FLUTTER', style: stackTitleStyle),
+              child: Text('FLUTTER', style: context.titleStyle),
             ),
             Padding(
               padding: DevelopersPageConstants.textPaddings,
-              child: Text('Flutter stack:', style: stackDescriptionStyle),
+              child: Text('Flutter stack:', style: context.bodyStyle),
             ),
             Padding(
               padding: DevelopersPageConstants.textPaddings,
               child: Text(
                 'Apps, already in production:',
-                style: stackDescriptionStyle,
+                style: context.bodyStyle,
               ),
             ),
             Padding(
@@ -74,8 +66,14 @@ class _FlutterCarouselWidgetState extends State<FlutterCarouselWidget> {
                       });
                     }),
                   ),
-                  DevelopersPageConstants.nextButton(_colorScheme, _controller),
-                  DevelopersPageConstants.backButton(_colorScheme, _controller),
+                  DevelopersPageConstants.nextButton(
+                    context.themeColors,
+                    _controller,
+                  ),
+                  DevelopersPageConstants.backButton(
+                    context.themeColors,
+                    _controller,
+                  ),
                 ],
               ),
             ),

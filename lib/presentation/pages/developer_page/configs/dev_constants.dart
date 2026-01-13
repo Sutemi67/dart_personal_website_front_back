@@ -7,6 +7,7 @@ class DevelopersPageConstants {
   static const textPaddings = EdgeInsets.only(left: 25, top: 15);
   static const iconBack = Icon(Icons.arrow_back_ios, color: Colors.white);
   static const iconForward = Icon(Icons.arrow_forward_ios, color: Colors.white);
+  static const double carouselBorderRadius = 32;
 
   static Positioned nextButton(
     ColorScheme colorScheme,

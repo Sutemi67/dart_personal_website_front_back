@@ -1,3 +1,4 @@
+import 'package:dart_personal_website_server/presentation/common_components/app_styles.dart';
 import 'package:dart_personal_website_server/presentation/pages/donation_page/components/donate_constants.dart';
 import 'package:flutter/material.dart';
 
@@ -9,28 +10,16 @@ class DonatePagePortrait extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colors = Theme.of(context).colorScheme;
-
     return SizedBox(
       width: double.infinity,
       child: Column(
         children: [
-          Text(
-            DonatePageConstants.pageTitle,
-            style: Theme.of(
-              context,
-            ).textTheme.headlineLarge!.copyWith(color: colors.primary),
-          ),
-          Text(
-            DonatePageConstants.pageDescription,
-            style: Theme.of(
-              context,
-            ).textTheme.titleMedium!.copyWith(color: colors.onSurface),
-          ),
+          Text(DonatePageConstants.pageTitle, style: context.titleStyle),
+          Text(DonatePageConstants.pageDescription, style: context.bodyStyle),
           Container(
             width: double.infinity,
             child: Card(
-              color: Theme.of(context).colorScheme.surfaceContainerHigh,
+              color: context.themeColors.surfaceContainerHigh,
               margin: DonatePageConstants.paddings,
               child: Column(
                 children: [

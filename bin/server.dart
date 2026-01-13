@@ -22,6 +22,6 @@ void main() async {
 
   final server = await serve(handler, InternetAddress.anyIPv4, 7575);
 
-  print('Server listening ip: ${server.address.host}:${server.port}');
+  print('Server listening ip: ${server.address.host}, port: ${server.port}');
   print('http://localhost:${server.port}');
 }

@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:dart_personal_website_server/presentation/common_components/app_styles.dart';
 import 'package:dart_personal_website_server/presentation/pages/developer_page/configs/dev_constants.dart';
 import 'package:dart_personal_website_server/presentation/pages/developer_page/widgets/hero_stack_layout.dart';
 import 'package:flutter/material.dart';
@@ -17,44 +18,30 @@ class _KotlinCarouselWidgetState extends State<KotlinCarouselWidget> {
   final CarouselSliderController _controller = CarouselSliderController();
   int _currentIndex = 0;
   late final _height = MediaQuery.of(context).size.height / 3;
-  late final _colorScheme = Theme.of(context).colorScheme;
-  late final _textScheme = Theme.of(context).textTheme;
-  late final _stackTitleStyle = _textScheme.headlineSmall;
-  late final _stackDescriptionStyle = _textScheme.titleMedium!.copyWith(
-    color: _colorScheme.onSurface,
-  );
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: DevelopersPageConstants.paddings,
       child: Card(
-        color: _colorScheme.surfaceContainerHigh,
+        color: context.cardColor,
         child: ListView(
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
           children: [
             Padding(
               padding: DevelopersPageConstants.textPaddings,
-              child: Text(
-                'KOTLIN',
-                style: _stackTitleStyle!.copyWith(
-                  color: Color.alphaBlend(
-                    _colorScheme.primary,
-                    _colorScheme.surface,
-                  ),
-                ),
-              ),
+              child: Text('KOTLIN', style: context.titleStyle),
             ),
             Padding(
               padding: DevelopersPageConstants.textPaddings,
-              child: Text('Kotlin stack:', style: _stackDescriptionStyle),
+              child: Text('Kotlin stack:', style: context.bodyStyle),
             ),
             Padding(
               padding: DevelopersPageConstants.textPaddings,
               child: Text(
                 'Apps, already in production:',
-                style: _stackDescriptionStyle,
+                style: context.bodyStyle,
               ),
             ),
             Padding(
@@ -79,8 +66,14 @@ class _KotlinCarouselWidgetState extends State<KotlinCarouselWidget> {
                       });
                     }),
                   ),
-                  DevelopersPageConstants.nextButton(_colorScheme, _controller),
-                  DevelopersPageConstants.backButton(_colorScheme, _controller),
+                  DevelopersPageConstants.nextButton(
+                    context.themeColors,
+                    _controller,
+                  ),
+                  DevelopersPageConstants.backButton(
+                    context.themeColors,
+                    _controller,
+                  ),
                 ],
               ),
             ),
