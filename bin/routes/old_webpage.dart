@@ -4,4 +4,4 @@ final oldWebpageHandler = createStaticHandler(
   'public$oldWebsiteEndpoint',
   defaultDocument: 'index.html',
 );
-const String oldWebsiteEndpoint = 'old_website';
+const String oldWebsiteEndpoint = '/old_website';
