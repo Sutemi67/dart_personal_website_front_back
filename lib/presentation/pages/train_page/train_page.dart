@@ -15,7 +15,7 @@ class TrainPage extends StatelessWidget {
             elevation: 2,
             child: Row(
               children: [
-                Expanded(child: Image(image: AssetImage('me.jpg'))),
+                Expanded(child: Image(image: AssetImage('assets/me.jpg'))),
                 Expanded(flex: 2, child: Text('describing text')),
               ],
             ),
@@ -27,10 +27,10 @@ class TrainPage extends StatelessWidget {
               padding: EdgeInsets.all(8.0),
               child: Row(
                 children: [
-                  Expanded(child: Image(image: AssetImage('dco1.webp'))),
-                  Expanded(child: Image(image: AssetImage('dco2.webp'))),
-                  Expanded(child: Image(image: AssetImage('dco3.webp'))),
-                  Expanded(child: Image(image: AssetImage('dco4.webp'))),
+                  Expanded(child: Image(image: AssetImage('assets/dco1.webp'))),
+                  Expanded(child: Image(image: AssetImage('assets/dco2.webp'))),
+                  Expanded(child: Image(image: AssetImage('assets/dco3.webp'))),
+                  Expanded(child: Image(image: AssetImage('assets/dco4.webp'))),
                 ],
               ),
             ),

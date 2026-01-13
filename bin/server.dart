@@ -21,6 +21,7 @@ void main() async {
       .addHandler(routes.call);
 
   final server = await serve(handler, InternetAddress.anyIPv4, 7575);
-  print(handler);
-  print('Server port:${server.address.host} ${server.port}');
+
+  print('Server listening ip: ${server.address.host}:${server.port}');
+  print('http://localhost:${server.port}');
 }
