@@ -49,19 +49,19 @@ class AppsLists {
       title: 'Afisha',
       description: 'description',
       imageUrl: 'assets/flutter.png',
-      urlToOpen: 'http://localhost:7575/afisha',
+      urlToOpen: 'http://212.3.131.67:7766/',
     ),
     AppInfo(
       title: 'Pong game',
       description: 'description',
       imageUrl: 'assets/flutter.png',
-      urlToOpen: 'http://localhost:7575/pong',
+      urlToOpen: '/pong',
     ),
     AppInfo(
       title: 'Old website',
       description: 'description',
       imageUrl: 'assets/appcradleicon.jpeg',
-      urlToOpen: 'http://localhost:7575/old_website',
+      urlToOpen: '/old_website',
     ),
   ];
 }
