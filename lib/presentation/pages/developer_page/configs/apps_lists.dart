@@ -1,6 +1,7 @@
 import 'app_info.dart';
 
 class AppsLists {
+  static const mainHost = "http://212.3.131.67:7575";
   static const List<AppInfo> kotlinList = [
     AppInfo(
       title: 'Friends Activity',
@@ -55,13 +56,13 @@ class AppsLists {
       title: 'Pong game',
       description: 'description',
       imageUrl: 'assets/flutter.png',
-      urlToOpen: '/pong',
+      urlToOpen: '$mainHost/pong',
     ),
     AppInfo(
       title: 'Old website',
       description: 'description',
       imageUrl: 'assets/appcradleicon.jpeg',
-      urlToOpen: '/old_website',
+      urlToOpen: '$mainHost/old_website',
     ),
   ];
 }
