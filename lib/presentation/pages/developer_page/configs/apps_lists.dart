@@ -12,13 +12,13 @@ class AppsLists {
     AppInfo(
       title: 'WOT Calc',
       description: 'description',
-      imageUrl: 'assets/flutter.png',
+      imageUrl: 'assets/wot.webp',
       urlToOpen: 'https://www.rustore.ru/catalog/app/acr.appcradle.wotcalc',
     ),
     AppInfo(
       title: 'Feelings Diary',
       description: 'diary of emotions',
-      imageUrl: 'assets/activity.webp',
+      imageUrl: 'assets/feelingsdiary.webp',
       urlToOpen:
           'https://www.rustore.ru/catalog/app/apc.appcradle.kotlinjc_feelingdiary_app',
     ),
@@ -32,14 +32,14 @@ class AppsLists {
     AppInfo(
       title: 'Task Time',
       description: 'Pomodorro timer',
-      imageUrl: 'assets/flutter.png',
+      imageUrl: 'assets/tasktime.webp',
       urlToOpen:
           'https://www.rustore.ru/catalog/app/apc.appcradle.kotlinjc_pomodorrotimer_app',
     ),
     AppInfo(
       title: 'Working Hours',
       description: 'calendar',
-      imageUrl: 'assets/flutter.png',
+      imageUrl: 'assets/workinghours.webp',
       urlToOpen:
           'https://www.rustore.ru/catalog/app/apc.appcradle.workinghours',
     ),
@@ -48,7 +48,7 @@ class AppsLists {
     AppInfo(
       title: 'Afisha',
       description: 'description',
-      imageUrl: 'assets/photo13.webp',
+      imageUrl: 'assets/flutter.png',
       urlToOpen: 'http://localhost:7575/afisha',
     ),
     AppInfo(
@@ -60,8 +60,8 @@ class AppsLists {
     AppInfo(
       title: 'Old website',
       description: 'description',
-      imageUrl: 'assets/photo20.webp',
-      urlToOpen: 'http://localhost:7575/',
+      imageUrl: 'assets/appcradleicon.jpeg',
+      urlToOpen: 'http://localhost:7575/old_website',
     ),
   ];
 }
