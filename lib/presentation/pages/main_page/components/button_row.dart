@@ -1,3 +1,4 @@
+import 'package:dart_personal_website_server/presentation/pages/main_page/pdf_opener.dart';
 import 'package:dart_personal_website_server/presentation/common_components/app_button.dart';
 import 'package:flutter/material.dart';
 
@@ -47,7 +48,10 @@ class ButtonRow extends StatelessWidget {
         ),
         Padding(
           padding: padding,
-          child: AppButton(onClick: () {}, text: 'Download CV'),
+          child: AppButton(
+            onClick: () => openPdfInNewTab(),
+            text: 'Download CV',
+          ),
         ),
       ],
     );

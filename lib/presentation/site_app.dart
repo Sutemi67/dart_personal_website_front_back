@@ -26,7 +26,6 @@ class _SiteAppState extends State<SiteApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: colors.surfaceContainerLowest,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         actions: isWidescreen

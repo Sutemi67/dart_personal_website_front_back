@@ -13,7 +13,6 @@ class TrainPage extends StatelessWidget {
           Text('Train page', style: context.titleStyle),
           Text('Let\'s get better together!', style: context.bodyStyle),
           SizedBox(
-            // height: MediaQuery.of(context).size.width / 2.8,
             child: Card(
               margin: const EdgeInsets.all(20),
               elevation: 2,
@@ -54,7 +53,7 @@ class TrainPage extends StatelessWidget {
               width: double.infinity,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Column(
+                child: const Column(
                   mainAxisSize: .min,
                   children: [
                     ListTile(
@@ -62,42 +61,12 @@ class TrainPage extends StatelessWidget {
                       subtitle: Text(
                         'desc of running and may otherand may otherand may otherand may otherand may otherand may other',
                       ),
-                      leading: CircleAvatar(
-                        child: ClipOval(
-                          child: Image.asset(
-                            'assets/me.jpg',
-                            fit: BoxFit.cover,
-                            width: double.infinity,
-                          ),
-                        ),
-                      ),
                     ),
                     ListTile(
                       title: Text('Aikido'),
                       subtitle: Text('desc of aiki'),
-                      leading: CircleAvatar(
-                        child: ClipOval(
-                          child: Image.asset(
-                            'assets/me.jpg',
-                            fit: BoxFit.cover,
-                            width: double.infinity,
-                          ),
-                        ),
-                      ),
                     ),
-                    ListTile(
-                      title: Text('GYM'),
-                      subtitle: Text('desc of gym'),
-                      leading: CircleAvatar(
-                        child: ClipOval(
-                          child: Image.asset(
-                            'assets/me.jpg',
-                            fit: BoxFit.cover,
-                            width: double.infinity,
-                          ),
-                        ),
-                      ),
-                    ),
+                    ListTile(title: Text('GYM'), subtitle: Text('desc of gym')),
                   ],
                 ),
               ),
@@ -108,7 +77,7 @@ class TrainPage extends StatelessWidget {
             margin: const EdgeInsets.all(20),
             elevation: 5,
             child: Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               child: Row(
                 children: [
                   Expanded(child: Image(image: AssetImage('assets/dco1.webp'))),
