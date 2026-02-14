@@ -1,0 +1,25 @@
+# === Сборка сервера (только Dart, без Flutter) ===
+FROM dart:stable AS build
+
+WORKDIR /app
+COPY pubspec.server.yaml pubspec.yaml
+RUN dart pub get
+
+COPY bin bin
+RUN dart compile exe bin/server.dart -o bin/server
+
+# Статика: уже собранные build/web и public/
+COPY build build
+COPY public public
+
+# === Минимальный образ для запуска ===
+FROM debian:bookworm-slim
+
+WORKDIR /app
+
+COPY --from=build /app/bin/server /app/bin/server
+COPY --from=build /app/build /app/build
+COPY --from=build /app/public /app/public
+
+EXPOSE 7575
+CMD ["/app/bin/server"]

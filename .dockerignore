@@ -1,6 +1,6 @@
 .dockerignore
 Dockerfile
-build/
+# build/ не исключаем: нужен build/web (перед docker build выполните: flutter build web)
 .dart_tool/
 .git/
 .github/

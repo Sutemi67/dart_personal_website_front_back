@@ -1,21 +1,23 @@
-# Use latest stable channel SDK.
+# === Сборка ===
 FROM dart:stable AS build
 
-# Resolve app dependencies.
 WORKDIR /app
-COPY pubspec.* ./
+COPY pubspec.server.yaml ./pubspec.yaml
 RUN dart pub get
 
-# Copy app source code (except anything in .dockerignore) and AOT compile app.
-COPY . .
+COPY bin ./bin
+# Добавляем флаги оптимизации при компиляции
 RUN dart compile exe bin/server.dart -o bin/server
 
-# Build minimal serving image from AOT-compiled `/server`
-# and the pre-built AOT-runtime in the `/runtime/` directory of the base image.
-FROM scratch
-COPY --from=build /runtime/ /
-COPY --from=build /app/bin/server /app/bin/
+# === Финальный образ (Distroless) ===
+FROM gcr.io/distroless/base-debian12
 
-# Start server.
-EXPOSE 8080
-CMD ["/app/bin/server"]
+WORKDIR /app
+
+# Копируем только бинарник и статику
+COPY --from=build /app/bin/server /app/bin/server
+COPY build ./build
+COPY public ./public
+
+EXPOSE 7575
+ENTRYPOINT ["/app/bin/server"]
